@@ -1,0 +1,76 @@
+@import 'vars';
+
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+    align-items: center;
+}
+
+.menu-logo {
+    padding: 0 30px;
+    width: 24px;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+nav {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+
+
+    .menu-nav {
+        list-style: none;
+        background: #fff;
+        margin: 0 30px;
+        box-shadow: 0px 6px 10px rgba(0,0,0, .3) ;
+
+        hr {
+            margin-top: 30px;
+            margin-left: 25px;
+            margin-right: 25px;
+            border: 1px solid color(neutral-lightgray);
+        }
+
+        .nav-item {
+            padding-top: 23px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            a {
+                color: color(neutral-dark);
+            }
+        }
+
+        .login {
+            padding-bottom: 25px;
+        
+            a {
+                color: color(neutral-gray);
+            }
+        }
+
+    }
+
+}
+
+.menu-btn {
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    cursor: pointer;
+
+    .btn-line {
+        width: 24px;
+        height: 2px;
+        background-color: color(neutral-dark);
+        margin: 0 0 5px 0;
+    }
+}
