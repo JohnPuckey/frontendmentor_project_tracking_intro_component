@@ -57,13 +57,20 @@ a {
     text-decoration: none;
 }
 
+.bg-shape {
+    position: absolute;
+    background-color: color(neutral-lightgray);
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 425px;
+    border-radius: 0 0  0 60px;
+    z-index: -1;
+}
+
 /* Navigation */
 
-
-
-
 @import 'menu';
-
 
 /* Content */
 
