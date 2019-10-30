@@ -1,5 +1,6 @@
 @import 'vars';
 
+/* positioning */
 
 header {
     grid-column: 1 / 3;
@@ -11,6 +12,8 @@ header {
     align-items: center;
 }
 
+/* Logo */
+
 .menu-logo {
     padding: 0 30px;
     width: 24px;
@@ -18,6 +21,8 @@ header {
     cursor: pointer;
 
 }
+
+/* Nav links */
 
 nav {
     position: absolute;
@@ -33,11 +38,12 @@ nav {
         margin: 0 30px;
         box-shadow: 0px 6px 10px rgba(0,0,0, .3);
 
-        hr {
+        .line {
+            margin: 0 auto;
             margin-top: 30px;
-            margin-left: 25px;
-            margin-right: 25px;
-            border: 1px solid color(neutral-lightgray);
+            max-width: 85%;
+            height: 2px;
+            background-color: color(neutral-lightgray);
         }
 
         .nav-item {
@@ -76,7 +82,7 @@ nav {
 
 }
 
-
+/* hamburger button */
 
 .menu-btn {
     position: absolute;
@@ -96,6 +102,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 0.5s ease;
     }
 
     .btn-line:before, 
@@ -106,6 +113,7 @@ nav {
         width: 100%;
         height: 2px;
         background-color: inherit;
+        transition: 0.2s ease;
 
     }
 
@@ -113,10 +121,12 @@ nav {
         top: 7px;
     }
 
+    /* transform hamburger into x */
 
     &.close {
         .btn-line {
             transform: rotate(135deg);
+            
         }
 
         .btn-line:before,
